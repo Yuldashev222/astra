@@ -1,0 +1,495 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra</title>
+   
+    
+    <link rel="stylesheet" href="{% static 'css/programs.css' %}" />
+   
+    <link rel="stylesheet" href="{% static 'css/timeline.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <link rel="stylesheet" href="{% static 'css/smm.css' %}">
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    
+  </head>
+  <style type="text/css">
+     
+     .header{
+       border-radius: 20px 20px 0px 0px;
+       padding: 10px 0px;
+       background: rgb(28, 0, 128);
+       color: #fff;
+       width: 100%;
+       display: flex;
+       align-content: center;
+       justify-content: center;
+     }
+     .faq-item{
+       margin-bottom: 40px;
+       margin-top: 40px;
+     }
+     .faq-body{
+       display: none;
+       margin-top: 30px;
+     }
+     .faq-wrapper{
+       width: 75%;
+       margin: 0 auto;
+     }
+     .faq-inner{
+       padding: 30px;
+       background: aliceblue;
+     }
+     .faq-plus{
+       float: right;
+       font-size: 1.4em;
+       line-height: 1em;
+       cursor: pointer;
+     }
+     hr{
+       background-color: #9b9b9b;
+     }
+   </style>
+  <body>
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div class="section a-bg-img-1">
+      <div class="container">
+        <div class="columns ">
+          <div class="column is-12">
+            <div class="logo"><img src="{% static 'img/about/Logo.png' %}" alt=""></div>
+            <nav class="navi">
+              <div class=""></div>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+              <ul class="mainMenu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li> <a href="{% url 'programs' %}">Programs</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'team' %}">Team</a></li>
+                <li><a href="{% url 'result' %}">Results</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-telegram"></i>
+                 
+                </span>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <div class="columns pt-6 mt-6">
+            <div class="column is-5 pt-6 mt-6">
+              <div class="a-basket mb-5">
+                <h1 class="">Striving for Excellence</h1>
+                <a href=""><button class="a-btn-1 mt-5">Explore More</button></a>
+              </div>
+              <span class="iconss mt-6 pt-6">
+                <i class="fab fa-facebook pr-4"></i>
+                <i class="fab fa-instagram pr-4"></i>
+                <i class="fab fa-telegram pr-4"></i>
+                <i class="fab fa-youtube"></i>
+              </span>
+            </div>
+            <div class="column is-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+<!--==========================
+          Timeline Tab
+===========================-->
+
+
+<div class="columns is-centered pt-6 mt-6" data-aos="zoom-in-up">
+  <div class="column is-4"></div>
+  <div class="column is-4 b-section-text pl-3">
+    <h1 class="has-text-centered">Преимущества работы с нами</h1>
+  </div>
+  <div class="column is-4"></div>
+</div>
+
+<div class="wrapper">
+  <div class="center-line">
+    <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+  </div>
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-star"></i>
+      <div class="details">
+        <span class="title">Title of Section 1</span>
+        <span>1st Jan 2021</span>
+      </div>
+      <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i>- Someone famous</i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-star"></i>
+      <div class="details">
+        <span class="title">Title of Section 2</span>
+        <span>2nd Jan 2021</span>
+      </div>
+      <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i>- Someone famous</i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-1">
+    <section>
+      <i class="icon fas fa-star"></i>
+      <div class="details">
+        <span class="title">Title of Section 3</span>
+        <span>3rd Jan 2021</span>
+      </div>
+      <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i>- Someone famous</i>
+      </div>
+    </section>
+  </div>
+  <div class="row row-2">
+    <section>
+      <i class="icon fas fa-star"></i>
+      <div class="details">
+        <span class="title">Title of Section 4</span>
+        <span>4th Jan 2021</span>
+      </div>
+      <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+      <div class="bottom">
+        <a href="#">Read more</a>
+        <i>- Someone famous</i>
+      </div>
+    </section>
+  </div>
+  
+
+</div>
+
+
+
+
+
+
+
+   <div class="section parallaxx has-background-black">
+     <div class="container">
+       <div class="columns">
+         <div class="column is-12">
+           <section class="">
+             <div class="parallaxx-inner"></div>
+           </section>
+         </div>
+       </div>
+     </div>
+   </div>   
+
+
+   <div class="columns is-centered pt-6 mt-6" data-aos="zoom-in-up">
+    <div class="column is-4"></div>
+    <div class="column is-4 b-section-text pl-3">
+      <h1 class="has-text-centered">Преимущества работы с нами</h1>
+    </div>
+    <div class="column is-4"></div>
+  </div>
+  <div class="a-home-section is-flex is-justify-content-center pb-6">
+    <div class="a-home-container">
+      <div class="columns is-centered pt-6" data-aos="zoom-in-up">
+        <div
+          class="column color-icon is-4 is-flex is-justify-content-center is-align-items-center"
+        >
+          <div class="color-icon-inner">
+            <img src="" alt="" />
+            <h1 class="mt-3">Удовольствие от процесса</h1>
+            <p class="mt-3">
+              Мы добиваемся идеального результата только когда сами в него
+              искренне верим, а процесс его создания приносит нам удовольствие. Мы
+              любим свою работу, поэтому и покупатели любят ее результат.
+            </p>
+          </div>
+        </div>
+        <div class="column"></div>
+        <div
+          class="column color-icon is-4 is-flex is-justify-content-center is-align-items-center"
+        >
+          <div class="color-icon-inner pt-5">
+            <img src="" alt="" />
+            <h1 class="mt-3">Стремление к новому</h1>
+            <p class="mt-3">
+              Мы работаем в быстро меняющихся условиях, создаем принципиально
+              новые продукты, бизнес-процессы, формируем модели поведения и
+              привычки. Этому нигде не учат, и только наше желание быть лучше и
+              открывать новое позволяет поддерживать и постоянно развивать наш
+              профессиональный уровень.
+            </p>
+          </div>
+        </div>
+        <div class="column"></div>
+        <div
+          class="column color-icon is-4 is-flex is-justify-content-center is-align-items-center"
+        >
+          <div class="color-icon-inner pt-6">
+            <img
+              class="pt-3"
+              src=""
+              alt=""
+            />
+            <h1 class="mt-3">Долгосрочные отношения</h1>
+            <p class="mt-3">
+              Мы всегда работаем на формирование долгосрочных взаимовыгодных
+              отношений. Наши покупатели обязательно должны вернуться за повторной
+              покупкой, клиенты и команда – оставаться с нами годами.
+              <br />
+              <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-color-agency-2 is-flex is-justify-content-center mt-6 has-background-white">
+    <div class="section-color-head-5 mt-6 pt-4 mb-6 pt-6">
+      <div class="columns pt-6 mb-6 pt-6">
+        <div class="column is-6">
+          <img
+            src="{% static 'img/about/explosion.jpg' %}"
+            alt=""
+            data-aos="flip-right"
+          />
+        </div>
+        <div class="column is-1"></div>
+        <div class="column is-5 a-agency-text has-text-start">
+          <h2 class="pt-6 mt-6">Администрирование VPS</h2>
+          <h1 class="pt-5">Помогаем настраивать веб-сервера на базе Linux</h1>
+          <p class="pt-4">
+            Каждый веб-проект нацелен на получение целевой аудитории и чем
+            больше,- тем лучше, но с ростом проекта владелец сайта замечает, что
+            ресурс начинает тормозить или бдительный хостер блокирует сайт из-за
+            перерасхода ресурсов по тарифному плану. В данной ситуации переход на
+            виртуальный сервере VPS / VDS — единственное решение этой проблемы.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+   <div class="section parallaxtu">
+     <div class="container">
+       <div class="columns">
+         <div class="column is-6 pt-6">
+           <div class="t-text-9 mt-6 pt-6">
+             <h1>Do you want to take our course?</h1>
+             <h2>Reach out and enjoy our courses</h2>
+             <div class="mt-6">
+              <a href="{% url 'contact' %}"><button class="t-btn-9">Contact Us</button></a> 
+             </div>
+           </div>
+
+           <section class="">
+             <div class="parallaxtu-inner"></div>
+           </section>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!--============================================================
+                                 First Section
+   ============================================================-->
+           <div class="section-color is-flex is-justify-content-center mt-6 pb-6">
+             <div class="section-color-head-5 mt-6">
+               <div class="columns">
+                 <div class="column is-5 a-agency-text has-text-start">
+                   <h2 class="pt-6">Почему стоит обратиться именно к нам?</h2>
+                   <h1 class="pt-5">
+                     Работа с «komandakosmos» - это свежие и уникальные идеи для вашего
+                     бизнес-плана.
+                   </h1>
+                   <p class="pt-4">Преимущества поисковой оптимизации для вашего бренда</p>
+                 </div>
+                 <div class="column is-1"></div>
+           
+                 <div class="column is-6">
+                   <img
+                     src="{% static 'img/about/explosion.jpg' %}"
+                     alt=""
+                     data-aos="flip-left"
+                   />
+                 </div>
+               </div>
+             </div>
+           </div>
+   
+
+
+           <div class="container pt-6" >
+               <div class="row">
+                 <div class="faq-wrapper">
+                   <div class="header ">
+                     <h1 class="has-text-white">FAQs</h1>
+                   </div>
+                   <div class="faq-inner">
+                     <div class="faq-item">
+                       <h3>
+                         What is an FAQ page ?
+                         <span class="faq-plus">&plus;</span>
+                       </h3>
+                       <div class="faq-body">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="faq-item">
+                       <h3>
+                         What is an FAQ page ?
+                         <span class="faq-plus">&plus;</span>
+                       </h3>
+                       <div class="faq-body">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="faq-item">
+                       <h3>
+                         What is an FAQ page ?
+                         <span class="faq-plus">&plus;</span>
+                       </h3>
+                       <div class="faq-body">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="faq-item">
+                       <h3>
+                         What is an FAQ page ?
+                         <span class="faq-plus">&plus;</span>
+                       </h3>
+                       <div class="faq-body">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                       </div>
+                     </div>
+                     <hr>
+                     <div class="faq-item">
+                       <h3>
+                         What is an FAQ page ?
+                         <span class="faq-plus">&plus;</span>
+                       </h3>
+                       <div class="faq-body">
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+   <!-- ========End of HOmepage-2====== -->
+
+   <!-- HOMEPAGE-3 -->
+
+   <!--
+     ======================================================
+                     parallex effect
+     ======================================================
+    -->
+
+    
+
+   
+
+
+
+
+
+<!--=====================================
+               Timeline Tab end
+=========================================-->
+
+    <div class="folio">
+      <div class="folio-wrapper">
+        <img src="{% static 'img/about/Logo.png' %}" alt="">
+      </div>
+      <p>
+        Agency is a full-service agency, busy designing and building beautiful
+        digital products, brands, and experiences.
+      </p>
+      <div class="folio-nav">
+        <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'team' %}">Team</a>
+            <a href="{% url 'result' %}">Results</a>
+      </div>
+      <footer>
+        <p>© 2022, Vectorweb.io</p>
+        <div class="footer-icon">
+          <a href="{% url 'contact' %}">Contact us</a>
+      
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+     $(".faq-plus").on('click',function(){
+       $(this).parent().parent().find('.faq-body').slideToggle();
+     });
+   </script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script>
+      let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#073763 ${scrollValue}%, #ffffff ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+    </script>
+  </body>
+</html>
